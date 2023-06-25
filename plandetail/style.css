@@ -1,0 +1,44 @@
+*{
+
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.plant-details{
+    width: 80rem;
+    min-height: 60rem;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.plant-details__container{
+    background-color: white;
+    box-shadow: 0 0 4px 4px rgba(0,0,0, 0.2);
+}
+.plant-details__header{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.plant-details__back{
+    color: black;
+    text-transform: uppercase;
+}
+.plant-details a{
+    text-decoration: none;
+}
+.plant-details__back span{
+    margin-left: 1.5rem;
+}
+.plant-details__like{
+    color: #999;
+    font-size:  2rem;
+}
+.plant-details__content{
+    display: flex;
+    
+}

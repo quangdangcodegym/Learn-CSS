@@ -1,0 +1,27 @@
+.table-title{
+    background: #299be4;
+    color: #f00;
+    padding: 16px 40px;
+    border-radius: 3px 3px 0 0;
+}
+.table-title .btn{
+    float: right;
+    margin-right: 10px;
+}
+.table-title h1{
+    color: white;
+}
+.table > thead{
+    background-color: #4CAF50 !important;
+}
+.text-center{
+    padding: 8px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+}
+
+#frmUpdateCustomer{
+    margin-top: 20px;
+}
+#btnUpdateCustomer{
+    margin-top: 20px;
+}
