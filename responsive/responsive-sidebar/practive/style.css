@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed";
+}
+body{
+    min-height: 100vh;
+    background: #150019;
+}
+.navigation{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    background: #3e0748;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation:hover, .navigation.active{
+    width: 300px;
+}
+.navigation ul li:hover{
+    background: #ea1d63;
+}
+.navigation ul li a{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icon{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    min-width: 60px
+}
+.navigation ul li a .icon .fa{
+    font-size: 24px;
+}
+.navigation ul li a .title{
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    white-space: nowrap
+}
+.toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #330748;
+    cursor: pointer;
+}
+.toggle.active{
+    background: #ea1d63;
+}
+.toggle::before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.toggle.active::before{
+    content: '\f00d';
+}
+@media (max-width: 768px) {
+    .navigation.active{
+        width: 100%;
+    }
+}

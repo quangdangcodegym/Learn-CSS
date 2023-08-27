@@ -1,0 +1,515 @@
+// Varaibles
+bg = #e9ebee
+postbg = #f6f7f9
+leftcontpos = 250px
+
+// Global
+body
+  background-color bg
+  
+textarea, .form-control
+  border 0 
+  border-radius 0
+  resize none
+
+// Top Menubar
+.topbar
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 1
+  padding 6px 26px
+  height 42px
+  background #3b5e95
+  border-bottom: 1px solid #294c7b
+  overflow hidden
+  .right-group
+    float right
+    .link-group
+      position relative
+      top -4px
+      display inline-block
+      padding 0
+      a
+        padding 9px 8px
+        color white
+        font-size 12px
+        img
+          display inline-block
+          width 24px
+          height 24px
+          margin-right 9px
+      a:hover
+        background #355486
+        text-decoration none
+    .link-group:nth-child(2)
+      a
+        margin-right 16px
+        border-left 1px solid #355485
+        
+    .notification-group
+      display inline-block
+      position relative
+      top 3px
+      .link-group
+        a
+          margin 0
+          border 0
+      a 
+        color #17253c
+        font-size 21px
+      a:hover
+        color #111
+        background transparent
+    .link-group:nth-child(4)
+      a
+        margin-left 16px
+        border-left 1px solid #355485
+        
+  .search-box
+    display inline-block
+    width calc(100vw - 72%)
+    .input-group
+      *
+        font-size 12px
+        height 25px
+        border 1px solid white
+        background white
+        outline 0
+      button
+        color #7a7a7a
+        transition all ease 150ms
+      button:hover
+        color #000
+
+// Content Sections
+  .left-content
+    left 0
+
+  .left-content
+    position fixed
+    top 42px
+    bottom 0
+    width leftcontpos
+    background bg
+    overflow auto
+    .global-links
+      padding 10px
+      margin-left 10px
+      a
+        display inline-block
+        color black
+        font-size 12px
+        width 100%
+        padding 2px 8px
+        img
+          width 20px
+          height 20px
+          margin-right 6px
+      .counter
+        float right
+        color #90949c
+        .fa-ellipsis-h
+          font-size 20px
+      .activepage
+        padding-top 5px
+        background white
+        border-radius 2px
+        border 1px solid #dddfe2
+    .group-content
+      h4
+        margin 20px 0 8px 0
+        font-size 13px
+        color #444
+        text-transform uppercase
+     a:last-child
+       .fa-caret-down
+         margin-right: 12px
+
+  .feed-content
+    position absolute
+    top 42px
+    bottom 0
+    left leftcontpos
+    right 0
+    padding 12px 7px
+    background bg
+    overflow auto
+    .recentcontainer
+      border-radius 2px
+      border 1px solid #dddfe2
+      margin-bottom 15px
+      overflow hidden
+      .newpostheader, .newpostfooter
+        padding 4px 5px
+        background postbg
+        li
+          display inline-block
+          width 100%
+          text-align center
+        li:first-child
+          float left
+        li:last-child
+          float rght
+        h4
+          font-size 14px
+          margin 10px 5px
+          color #666
+        a:first-child
+          margin-right 5px
+        a
+          font-size 14px
+          img 
+            width 40px
+            height 40px
+            margin 5px 5px 0 5px
+          .name
+            position relative
+            top -6px
+          .fa
+            display inline-block
+            margin 5px
+        > span
+          position relative
+          top -6px
+          left -4px
+          font-size 14px
+        p
+          position relative
+          top -22px
+          left 55px
+          font-size 12px
+          a
+            font-size 12px
+            color #4b4f56
+            margin-right 5px
+        .rightsideofpost
+          position relative
+          top -73px
+          float right
+          .personpostmenu
+            color #4b4f56
+        li
+          a
+            font-size 14px
+            color #4b4f56
+            margin-right 5px
+            .fa
+              display inline-block
+              margin 5px
+      .community-counter
+        padding 4px 5px
+        background postbg
+        li
+          a
+            font-size 14px
+            color #4b4f56
+            margin-right 5px
+            .fa
+              display inline-block
+              margin 5px
+      .newpost
+        textarea, .postcontent
+          display inherit
+          padding 10px
+          width 100%
+          height 100%
+          background postbg
+        .postcontent
+          position relative
+          margin-top -40px
+          padding-bottom 40px
+          white-space pre-line
+      .newpostfooter
+        margin-top 1px
+      .commentpost
+        display inherit
+        background postbg
+        margin-top -1px
+        img
+          margin 10px
+          height 40px
+        .input-group-btn
+          display inline-block
+          background white
+          a
+            margin-top 10px
+    .recentcontainer:nth-child(1)
+      .newpostfooter
+        li:first-child
+          .fa
+            color #96b756
+        li:nth-child(2)
+          .fa
+            color #f1c04e
+        li:last-child a:last-child
+          font-size 20px
+
+  .thirdcol-content
+    position fixed
+    top 42px
+    bottom 0
+    width leftcontpos
+    background bg
+    right 0
+    display block
+    width 300px
+    padding 12px 7px
+    background bg
+    overflow-x auto
+    > div > a, > div > p
+      font-size 12px
+    .section-content
+      border-radius 2px
+      border 1px solid #dddfe2
+      margin 0 0 15px 0
+      overflow-y hidden
+      padding 4px 5px
+      background postbg
+      h4:nth-child(1)
+        font-size 14px
+        margin 6px
+        padding 6px
+        color #888
+        a
+          float right
+          color #8a8a8a
+      p
+        a
+          display block
+          span:not(:first-child)
+            display inline-block
+            margin-left 4px
+            font-size 9px
+            padding 1px 2px
+            color #545454
+            background white
+            border 1px solid #b8b8b8
+      a
+        font-size 14px
+        margin-right 5px
+        img 
+          width 64px
+          height 64px
+          margin 5px 5px 0 5px
+        .fa
+          display inline-block
+          margin 5px
+      p:nth-child(3)
+        text-align right
+        margin -20px 0 4px 0
+        padding 2px
+        width 80%
+        a
+          display inline-block
+          position relative
+          top -18px
+      // pages first links
+      p:nth-child(4)
+        margin-top -64px
+        margin-left 75px
+        font-size 12px
+        a:not(:nth-child(1))
+          font-size 12px
+          color #4b4f56
+          margin-right 5px
+      // pages send links
+      p:nth-child(7)
+        text-align center
+        a
+          width 20%
+          display inline-block
+          color #333
+        .fa
+          display block
+      .activetrend, .activetrend .fa
+        color #1273b8
+      .trend-feed
+        ul
+          margin 0 30px
+          padding 0
+          list-style: square url('http://i.imgur.com/Etzny0O.png');
+          li
+            font-size 12px
+            span:nth-child(1)
+              color #999
+         div
+           a
+             float left
+             font-size 12px
+             margin-top 4px
+           a:first-child
+             padding 4px 0 0 4px
+           a:last-child
+             float right
+             padding 4px 0 0 4px
+    .section-content:nth-child(1) > a:nth-child(2)
+      float right
+      color #8a8a8a
+    .section-content:nth-child(4)
+      font-size 12px
+      h4
+        float left
+      a:nth-child(2)
+        margin-top 10px
+        float right
+      div
+        padding 5px
+        a
+          display block
+          img
+            width 100%
+            height auto
+        a:hover
+          text-decoration none
+        div
+          padding 5px 5px 0 5px
+          font-size 12px
+          div
+            padding 0
+        div:nth-child(3)
+          color #878787
+        
+    .section-content:nth-child(5)
+      a
+        font-size 12px
+    
+  .feed-content
+    right 300px
+
+  .right-content
+    display none
+    position fixed
+    top 42px
+    bottom 0
+    width leftcontpos
+    background bg
+    right 0
+    width 275px
+    padding 12px 7px
+    background bg
+    overflow-x auto
+    border-left 1px solid #a3a3a3
+    ul
+      list-style none
+      padding 0
+      margin 0
+      height 50%
+      overflow auto
+      li
+        display block
+        padding 5px 5px 15px 5px
+        width 100%
+        border-bottom 1px solid #a3a3a3
+        cursor pointer
+    ul:first-child
+      list-style none
+      padding 0
+      height 50%
+      overflow auto
+      li
+        display block
+        padding 5px 5px 15px 5px
+        width 100%
+        border-bottom 1px solid #a3a3a3
+        cursor pointer
+        a
+          padding 5px
+          font-size 12px
+        img
+          display inline-block
+          width 32px
+          height 32px
+        b, span
+          color #000
+        span
+          color #545454
+        a:hover
+          text-decoration none
+      li:hover
+        background #ccc
+    ul:nth-child(2)
+      list-style none
+      padding 0
+      height 50%
+      overflow auto
+      h4
+        font-size 12px
+        margin-top 15px
+        color #474747
+        text-transform uppercase
+      li
+        display block
+        padding 5px 5px 15px 5px
+        width 100%
+        border-bottom 1px solid #a3a3a3
+        cursor pointer
+        a
+          padding 5px
+          font-size 12px
+        img
+          display inline-block
+          width 32px
+          height 32px
+        b, span
+          color #000
+        span
+          display block
+          float right
+          position relative
+          top 8px
+          font-size 9px
+          padding 1px 2px
+          color #545454
+          background white
+          border 1px solid #b8b8b8
+        .fa
+          float right
+          position relative
+          top 8px
+          color #11ff00
+        a:hover
+          text-decoration none
+      li:hover
+        background #ccc
+
+@media all and (max-width:700px)
+  .left-content
+    display none
+  .feed-content
+    left 0
+  .topbar
+    .right-group
+        > .link-group
+          display none
+
+@media all and (max-width:1000px)
+  .thirdcol-content
+    display none
+  .feed-content
+    right 0
+@media all and (min-width:1260px)
+  .feed-content
+    right 250px
+  .right-content
+    right 0
+@media all and (min-width:1260px)
+  .feed-content
+    right 575px
+  .thirdcol-content
+    right 275px
+  .right-content
+    display block
+    
+// Misc
+.pointer
+  cursor pointer
+.ib
+  display inline-block
+.fl
+  float left
+.fr
+  float right
+.tc
+  text-align center
